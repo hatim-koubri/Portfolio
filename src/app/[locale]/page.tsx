@@ -54,10 +54,23 @@ export default async function Home({ params }: LocalePageProps) {
     : defaultLocale;
   const translations = getTranslations(locale);
   const { profile, projects, skills, achievements } = getLocaleContent(locale);
+  const personJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Hatim Koubri",
+    url: `${siteMetadata.url}/${locale}`,
+    jobTitle: locale === "fr" ? "Étudiant ingénieur en informatique" : "Computer Engineering Student",
+    alumniOf: "EMSI Marrakech",
+    sameAs: profile.socialLinks.map((link) => link.href),
+  };
 
   return (
     <SiteShell locale={locale} translations={translations} profile={profile}>
       <main>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
         <Hero profile={profile} locale={locale} />
         <FeaturedProjects projects={projects} locale={locale} />
         <Skills skills={skills} locale={locale} />

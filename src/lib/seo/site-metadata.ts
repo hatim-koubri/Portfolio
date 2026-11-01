@@ -4,7 +4,7 @@ export const siteMetadata = {
   title: "Hatim Koubri | Software Engineering Portfolio",
   description:
     "Professional portfolio of Hatim Koubri, software engineering student specializing in Java, Spring Boot, Next.js, TypeScript, software quality, and full-stack development.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://hatimkoubri.dev",
   author: "Hatim Koubri",
   keywords: [
     "Hatim Koubri",
