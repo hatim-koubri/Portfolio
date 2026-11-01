@@ -34,14 +34,17 @@ export function Hero({ profile, locale }: HeroProps) {
               <HeroAvailability label={profile.availability} />
               <div className="space-y-4">
                 <p className="text-sm font-semibold text-accent">
-                  {profile.identity.name} · {profile.education.level}
+                  {profile.education.level}
                 </p>
                 <h1
                   id="hero-title"
-                  className="max-w-5xl text-4xl font-semibold leading-[1.06] tracking-normal text-balance sm:text-5xl sm:leading-[1.04] lg:text-[4rem] lg:leading-[1.02]"
+                  className="text-4xl font-bold leading-tight tracking-tight text-balance text-foreground sm:text-5xl lg:text-6xl"
                 >
-                  {profile.headline}
+                  {profile.identity.name}
                 </h1>
+                <h2 className="max-w-5xl text-3xl font-semibold leading-[1.08] tracking-normal text-balance text-muted-foreground sm:text-4xl lg:text-[3.25rem]">
+                  {profile.headline}
+                </h2>
                 <p className="max-w-3xl text-base leading-7 text-muted-foreground sm:text-lg sm:leading-8">
                   {profile.shortBio}
                 </p>
