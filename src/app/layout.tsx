@@ -15,6 +15,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = createMetadata({
+  icons: {
+    icon: "/images/logo2.jpeg",
+    apple: "/images/logo2.jpeg",
+  },
   title: {
     default: "Software Engineer Portfolio",
     template: "%s | Software Engineer Portfolio",

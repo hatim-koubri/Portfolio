@@ -22,7 +22,7 @@ export function HeroPhoto({ name, className }: HeroPhotoProps) {
       <div className="absolute inset-0 bg-[var(--gradient-surface)]" />
       {showImage ? (
         <Image
-          src="/images/hatim.jpg"
+          src="/images/hatim.png"
           alt={`${name} professional portrait`}
           fill
           priority

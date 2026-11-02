@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { Code2 } from "lucide-react";
+import Image from "next/image";
 import { Footer } from "@/components/layout/footer";
 import { Container } from "@/components/shared/container";
 import { LanguageSwitcher } from "@/components/shared/language-switcher";
@@ -44,8 +44,15 @@ export function SiteShell({
             aria-label="Portfolio home"
             className="inline-flex items-center gap-3 font-semibold tracking-normal"
           >
-            <span className="inline-flex size-9 items-center justify-center rounded-md border bg-card shadow-sm">
-              <Code2 className="size-4 text-accent" />
+            <span className="relative inline-flex size-9 items-center justify-center overflow-hidden rounded-md border bg-card shadow-sm">
+              <Image
+                src="/images/hatim.png"
+                alt=""
+                aria-hidden="true"
+                fill
+                sizes="36px"
+                className="object-cover object-[center_28%]"
+              />
             </span>
             <span className="hidden sm:inline">{t.navigation.home}</span>
           </Link>
