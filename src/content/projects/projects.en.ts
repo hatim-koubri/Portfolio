@@ -162,8 +162,8 @@ export const projectsEn: Project[] = [
     ],
     githubUrl: null,
     reportUrl: "/rapport/KaynBus.pdf",
-    image: "/projects/kaynbus/cover.png",
-    coverImage: "/projects/kaynbus/cover.png",
+    image: "/projects/KaynBus/cover.png",
+    coverImage: "/projects/KaynBus/cover.png",
     screenshots: [
       "/projects/kaynbus/home.png",
       "/projects/kaynbus/login.png",
