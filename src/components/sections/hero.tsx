@@ -64,7 +64,8 @@ export function Hero({ profile, locale }: HeroProps) {
                 {profile.ctaLabels.viewProjects}
               </Button>
               <Button
-                href="/cv/Hatim-Koubri-CV.pdf"
+                href="/cv/cv.pdf"
+                download="Hatim-Koubri-CV.pdf"
                 size="lg"
                 variant="secondary"
                 icon={<ArrowDownToLine className="size-4" aria-hidden="true" />}

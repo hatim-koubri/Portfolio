@@ -1,3 +1,7 @@
+"use client";
+
+import type { MouseEvent } from "react";
+
 type TocItem = {
   id: string;
   label: string;
@@ -21,6 +25,18 @@ export function CaseStudyToc({ title, items }: CaseStudyTocProps) {
               <li key={item.id}>
                 <a
                   href={`#${item.id}`}
+                  onClick={(event: MouseEvent<HTMLAnchorElement>) => {
+                    event.preventDefault();
+                    window.history.replaceState(
+                      window.history.state,
+                      "",
+                      `${window.location.pathname}${window.location.search}#${item.id}`,
+                    );
+                    document.getElementById(item.id)?.scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                    });
+                  }}
                   className="block rounded-md px-3 py-2 text-muted-foreground transition hover:bg-muted hover:text-foreground focus-visible:bg-muted focus-visible:text-foreground"
                 >
                   {item.label}

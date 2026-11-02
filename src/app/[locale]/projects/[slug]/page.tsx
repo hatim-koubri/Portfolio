@@ -253,7 +253,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <section aria-labelledby="project-title" className="space-y-7">
                 <div className="flex flex-wrap gap-3">
                   <Button
-                    href={`/${locale}/#projects`}
+                    href={`/${locale}`}
                     variant="ghost"
                     icon={<ArrowLeft className="size-4" aria-hidden="true" />}
                   >
