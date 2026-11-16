@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { About } from "@/components/sections/about";
 import { Achievements } from "@/components/sections/achievements";
 import { Contact } from "@/components/sections/contact";
+import { Certifications } from "@/components/sections/certifications";
 import { FeaturedProjects } from "@/components/sections/featured-projects";
 import { Hero } from "@/components/sections/hero";
 import { Skills } from "@/components/sections/skills";
@@ -76,6 +77,7 @@ export default async function Home({ params }: LocalePageProps) {
         <Skills skills={skills} locale={locale} />
         <About profile={profile} locale={locale} />
         <Achievements achievements={achievements} locale={locale} />
+        <Certifications locale={locale} />
         <Contact profile={profile} locale={locale} />
       </main>
     </SiteShell>
